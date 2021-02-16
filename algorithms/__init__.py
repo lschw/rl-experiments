@@ -9,4 +9,5 @@ from .td0 import td0
 from .sarsa import sarsa
 from .qlearning import qlearning
 from .expected_sarsa import expected_sarsa
+from .double_qlearning import double_qlearning
 from . import utils

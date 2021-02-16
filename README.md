@@ -23,6 +23,7 @@ and experiments with environments using the OpenAI Gym API.
 * [SARSA](algorithms/sarsa.py)
 * [Expected SARSA](algorithms/expected_sarsa.py)
 * [Q-Learning](algorithms/qlearning.py)
+* [Double Q-Learning](algorithms/double_qlearning.py)
 
 ## Environments
 * [2d grid world](environments/gridworld/): A 2d rectangular grid world where agent can move deterministically up, down, left, right.

@@ -46,8 +46,17 @@ pi = alg.utils.create_greedy_policy(Q)
 v = alg.td0(env, pi, alpha=0.1, gamma=1, N_episodes=2000)
 render_policy_and_value_function(env, pi, v)
 
+print("Double Q-Learning")
+alg.utils.random_seed(env, 1)
+Q,history_double_qlearning = alg.double_qlearning(
+    env, alpha=0.1, gamma=1, epsilon=0.3, N_episodes=2000)
+pi = alg.utils.create_greedy_policy(Q)
+v = alg.td0(env, pi, alpha=0.1, gamma=1, N_episodes=2000)
+render_policy_and_value_function(env, pi, v)
+
 alg.utils.plot_learning_curves(
-    [history_sarsa, history_qlearning, history_expected_sarsa],
-    ["SARSA", "Q-Learning", "Expected SARSA"],
+    [history_sarsa, history_qlearning, history_expected_sarsa,
+    history_double_qlearning],
+    ["SARSA", "Q-Learning", "Expected SARSA", "Double Q-Learning"],
     "gridworld_td_learning.pdf"
 )
