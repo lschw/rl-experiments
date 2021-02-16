@@ -2,19 +2,19 @@ import numpy as np
 from collections import defaultdict
 
 
-def select_action_greedy(Q, s):
-    return np.argmax(Q[s])
+def select_action_greedy(Qs):
+    return np.argmax(Qs)
 
 
-def select_action_epsilon_greedy(Q, s, epsilon):
+def select_action_epsilon_greedy(Qs, epsilon):
     if np.random.rand() < epsilon:
-        return np.random.choice(len(Q[s]))
+        return np.random.choice(len(Qs))
     else:
-        return np.argmax(Q[s])
+        return np.argmax(Qs)
 
 
-def select_action_random(Q, s):
-    return np.random.choice(len(Q[s]))
+def select_action_random(Qs):
+    return np.random.choice(len(Qs))
 
 
 def select_action_policy(pi, s):

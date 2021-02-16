@@ -32,12 +32,12 @@ def sarsa(env, alpha=1, gamma=1, epsilon=0.1, N_episodes=1000,
         alpha_i = alpha_decay(alpha, i_episode, N_episodes)
 
         state = env.reset()
-        action = select_action_epsilon_greedy(Q, state, epsilon_i)
+        action = select_action_epsilon_greedy(Q[state], epsilon_i)
         done = False
         while not done:
             state_new, reward, done, info = env.step(action)
             history[i_episode].append((state,action,reward))
-            action_new = select_action_epsilon_greedy(Q, state, epsilon_i)
+            action_new = select_action_epsilon_greedy(Q[state], epsilon_i)
             Q[state][action] += alpha_i*(reward
                 + gamma*Q[state_new][action_new] - Q[state][action])
             state = state_new

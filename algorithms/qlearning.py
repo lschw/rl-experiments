@@ -34,7 +34,7 @@ def qlearning(env, alpha=1, gamma=1, epsilon=0.1, N_episodes=1000,
         state = env.reset()
         done = False
         while not done:
-            action = select_action_epsilon_greedy(Q, state, epsilon_i)
+            action = select_action_epsilon_greedy(Q[state], epsilon_i)
             state_new, reward, done, info = env.step(action)
             history[i_episode].append((state,action,reward))
             Q[state][action] += alpha_i*(reward
