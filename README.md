@@ -20,6 +20,7 @@ and experiments with environments using the OpenAI Gym API.
 
 ### Temporal-difference
 * [TD(0)](algorithms/td0.py)
+* [n-step TD](algorithms/nstep_td.py)
 * [SARSA](algorithms/sarsa.py)
 * [Expected SARSA](algorithms/expected_sarsa.py)
 * [Q-Learning](algorithms/qlearning.py)
