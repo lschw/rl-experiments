@@ -6,6 +6,7 @@ from .mc_on_policy_control import mc_on_policy_control
 from .mc_off_policy_evaluation import mc_off_policy_evaluation
 from .mc_off_policy_control import mc_off_policy_control
 from .td0 import td0
+from .nstep_td import nstep_td
 from .sarsa import sarsa
 from .qlearning import qlearning
 from .expected_sarsa import expected_sarsa

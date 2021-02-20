@@ -22,6 +22,12 @@ pi = defaultdict(lambda: np.ones(env.action_space.n)/env.action_space.n)
 v = alg.td0(env, pi, alpha=0.1, gamma=1, N_episodes=10000)
 render_policy_and_value_function(env, pi, v)
 
+print("N-step (n=3) TD for equiprobable policy")
+alg.utils.random_seed(env, 1)
+pi = defaultdict(lambda: np.ones(env.action_space.n)/env.action_space.n)
+v = alg.nstep_td(env, pi, alpha=0.1, gamma=1, n=3, N_episodes=10000)
+render_policy_and_value_function(env, pi, v)
+
 print("SARSA")
 alg.utils.random_seed(env, 1)
 Q,history_sarsa = alg.sarsa(
