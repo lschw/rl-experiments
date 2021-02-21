@@ -28,6 +28,7 @@ and experiments with environments using the OpenAI Gym API.
 
 ## Environments
 * [2d grid world](environments/gridworld/): A 2d rectangular grid world where agent can move deterministically up, down, left, right.
+* [1d random walk](environments/randomwalk): A 1d random walk reward-only process.
 
 
 ## Experiments
