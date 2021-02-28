@@ -11,4 +11,8 @@ from .sarsa import sarsa
 from .qlearning import qlearning
 from .expected_sarsa import expected_sarsa
 from .double_qlearning import double_qlearning
+from .gradient_mc_evaluation import gradient_mc_evaluation
+from .semi_gradient_td0 import semi_gradient_td0
+from .semi_gradient_sarsa import semi_gradient_sarsa
+from .semi_gradient_qlearning import semi_gradient_qlearning
 from . import utils
