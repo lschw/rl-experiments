@@ -26,6 +26,12 @@ and experiments with environments using the OpenAI Gym API.
 * [Q-Learning](algorithms/qlearning.py)
 * [Double Q-Learning](algorithms/double_qlearning.py)
 
+### Gradient-methods
+* [Semi-gradient TD(0)](algorithms/semi_gradient_td0.py)
+* [Gradient Monte Carlo](algorithms/gradient_mc_evaluation.py)
+* [Semi-gradient Q-Learning](algorithms/semi_gradient_qlearning.py)
+* [Semi-gradient SARSA](algorithms/semi_gradient_sarsa.py)
+
 ## Environments
 * [2d grid world](environments/gridworld/): A 2d rectangular grid world where agent can move deterministically up, down, left, right.
 * [1d random walk](environments/randomwalk): A 1d random walk reward-only process.
@@ -36,3 +42,6 @@ and experiments with environments using the OpenAI Gym API.
 * [Gridworld](experiments/gridworld)
 * [Frozen Lake](experiments/frozenlake)
 * [Taxi](experiments/taxi)
+* [Randomwalk](experiments/randomwalk)
+* [Mountaincar](experiments/mountaincar)
+* [Cartpole](experiments/cartpole)
