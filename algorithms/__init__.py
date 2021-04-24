@@ -15,5 +15,6 @@ from .gradient_mc_evaluation import gradient_mc_evaluation
 from .semi_gradient_td0 import semi_gradient_td0
 from .semi_gradient_sarsa import semi_gradient_sarsa
 from .semi_gradient_qlearning import semi_gradient_qlearning
+from .dqn import dqn
 from . import utils
 from . import encoding
