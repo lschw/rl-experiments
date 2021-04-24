@@ -25,6 +25,7 @@ and experiments with environments using the OpenAI Gym API.
 * [Expected SARSA](algorithms/expected_sarsa.py)
 * [Q-Learning](algorithms/qlearning.py)
 * [Double Q-Learning](algorithms/double_qlearning.py)
+* [DQN](algorithms/dqn.py)
 
 ### Gradient-methods
 * [Semi-gradient TD(0)](algorithms/semi_gradient_td0.py)
